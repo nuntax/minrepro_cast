@@ -9,13 +9,6 @@ contract TestContract {
     }
 
     function getAddress() public view returns (address) {
-        abi.encodePacked(
-            bytecode,
-            abi.encode(
-                0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed,
-                0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed
-            )
-        );
         return address(this);
     }
 }
